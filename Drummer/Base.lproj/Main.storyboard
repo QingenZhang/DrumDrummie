@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,12 +21,122 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HAK-WU-pAF">
-                                <rect key="frame" x="-21" y="65" width="200" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MCw-ws-vrZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPm-Ys-Xdz">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="213"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEW-zP-D8r">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="213"/>
+                                                <color key="backgroundColor" red="0.66932070985473191" green="0.21614906041094067" blue="0.95041288860103623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="DrumBottomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qWw-xk-vvz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V31-iZ-zDC">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="213"/>
+                                                <color key="backgroundColor" red="0.81520376847927023" green="0.45098018226118236" blue="0.95041288860103623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="DrumBottomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obb-am-y7S"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsL-fI-y8k">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="213"/>
+                                                <color key="backgroundColor" red="0.37214733046929166" green="0.64460675741935825" blue="0.95041288860103623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="DrumBottomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWd-aF-Xlu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="V31-iZ-zDC" firstAttribute="width" secondItem="NsL-fI-y8k" secondAttribute="width" id="ZpU-HK-sPO"/>
+                                            <constraint firstItem="CEW-zP-D8r" firstAttribute="width" secondItem="V31-iZ-zDC" secondAttribute="width" id="sd7-XE-AkP"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJp-X1-9M8">
+                                        <rect key="frame" x="0.0" y="213" width="375" height="213"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utM-Ma-vH6">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="213"/>
+                                                <color key="backgroundColor" red="0.62683861975978294" green="0.60976457157134423" blue="0.95041288860103623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="DrumBottomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W4F-pM-ho9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CML-oN-JLA">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="213"/>
+                                                <color key="backgroundColor" red="0.19760958992667116" green="0.27084135407924431" blue="0.95041288860103623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" red="0.37872517203600048" green="0.65600042002547576" blue="0.96721178756476689" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="DrumBottomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIr-IT-vTC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dU-Er-OSc">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="213"/>
+                                                <color key="backgroundColor" red="0.44719850140106276" green="0.26032187767703535" blue="0.95041288860103623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="DrumBottomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57d-Yn-bHC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="CML-oN-JLA" firstAttribute="width" secondItem="9dU-Er-OSc" secondAttribute="width" id="7dt-NE-SGp"/>
+                                            <constraint firstItem="utM-Ma-vH6" firstAttribute="width" secondItem="CML-oN-JLA" secondAttribute="width" id="ir8-3v-wnO"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYd-Hb-T5C">
+                                        <rect key="frame" x="0.0" y="426" width="375" height="213"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maW-qv-0fL">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="213"/>
+                                                <color key="backgroundColor" red="0.35920098214260304" green="0.6820635427555507" blue="0.95041288860103623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="DrumBottomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u3o-Lx-Vhe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RkH-7B-gQn">
+                                        <rect key="frame" x="0.0" y="639" width="375" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drum Kit Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbz-pH-Bq2">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="who-zF-ODE">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="29"/>
+                                                <segments>
+                                                    <segment title="Acoustic"/>
+                                                    <segment title="Electronic"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="drumKitWasChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jRK-Vl-uFe"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Dbz-pH-Bq2" firstAttribute="width" secondItem="who-zF-ODE" secondAttribute="width" id="VZM-ym-vHg"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kPm-Ys-Xdz" firstAttribute="height" secondItem="dJp-X1-9M8" secondAttribute="height" id="cn3-yc-f1T"/>
+                                    <constraint firstItem="dJp-X1-9M8" firstAttribute="height" secondItem="FYd-Hb-T5C" secondAttribute="height" id="r7E-JM-aPQ"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MCw-ws-vrZ" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="40X-PL-mKW"/>
+                            <constraint firstItem="MCw-ws-vrZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="FEg-Ng-i4i"/>
+                            <constraint firstItem="MCw-ws-vrZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="U2b-zY-mli"/>
+                            <constraint firstItem="MCw-ws-vrZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kZl-Sa-E5g"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
